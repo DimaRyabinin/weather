@@ -1,0 +1,14 @@
+$background: rgba(232, 233, 243, 0.4);
+$backgroundTemperature: #71A8CF;
+$backgroundTemperatureActive: #1AB5ED;
+$colorText: #dddddd;
+$font: 'Nunito';
+
+@mixin text($color, $size, $weight) {
+  color: $color;
+  font: {
+    size: $size;
+    weight: $weight;
+    family: $font ;
+  }
+}

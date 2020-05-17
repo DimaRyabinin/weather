@@ -1,0 +1,6 @@
+@import '../assets.scss';
+
+.write-city {
+  @include text(rgba(93, 84, 223, 0.603), 58px, 400);
+  text-align: center;
+}

@@ -1,0 +1,137 @@
+@import '../assets.scss';
+
+.day {
+  // margin-top: 12px;
+
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  max-width: 395px;
+  height: 65px;
+
+  background-color: #ffffff;
+  border-radius: 40px;
+  box-shadow: 0px 0px 4px 2px #C4C4C4;
+  cursor: pointer;
+  transition-duration: 0.3s;
+  &:hover .day__temperature {
+    background-color: $backgroundTemperatureActive;
+  }
+  &:hover {
+    transform: scale(1.05);
+  }
+  &__temperature {
+    display: flex;
+
+
+
+    width: 106px;
+    align-items: center;
+    background-color: $backgroundTemperature;
+    @include text($colorText, 26px, 400);
+    justify-content: center;
+    border-radius: 40px;
+
+    &-wrap {
+      display: flex;
+      .celsius {
+        margin-left: 8px;
+      }
+    }
+
+    .temp {
+      position: relative;
+    }
+
+    .circle {
+      position: absolute;
+
+      top: 0px;
+      right: -8px;
+
+      width: 4px;
+      height: 4px;
+      border-radius: 50%;
+    
+      background-color: transparent;
+      border: 2px solid #dddddd;
+    }
+  }
+  .active {
+    background-color: $backgroundTemperatureActive;
+  }
+  &-wrap {
+    .day-wrapper {
+      margin-left: 27px;
+
+      display: flex;
+      flex-direction: column;
+    }
+    display: flex;
+    align-items: center;
+    &__icon {
+      width: 50px;
+      margin-left: 10px;
+    }
+    &__title {
+      @include text(rgba(110, 118, 133, 0.8), 18px, 700);
+    }
+    &__subtitle {
+      @include text(rgba(110, 118, 133, 0.6), 12px, 700);
+    }
+  }
+}
+
+// .day__temperature_daytime {
+//   // position: relative;
+//   display: flex;
+//   .circle {
+//     margin-right: -8px;
+
+//     position: absolute;
+//     top: 0px;
+//     right: 0;
+
+//     width: 3px;
+//     height: 3px;
+//     border-radius: 50%;
+
+//     background-color: transparent;
+//     border: 2px solid #dddddd;
+//   }
+// }
+
+// .day__temperature_night {
+//   // position: relative;
+//   display: flex;
+//   .circle {
+//     margin-right: -8px;
+
+//     position: absolute;
+//     top: 0px;
+//     right: 0;
+
+//     width: 3px;
+//     height: 3px;
+//     border-radius: 50%;
+
+//     background-color: transparent;
+//     border: 2px solid #dddddd;
+//   }
+// }
+
+// .slash {
+//   margin-left: 5px;
+//   margin-right: 5px;
+//   // margin-right: 5px;
+// }
+
+// .day__temperature {
+//   .wrap {
+//     position: relative;
+//   }
+//   .celsiy {
+//     margin-left: 10px;
+//   }
+// }

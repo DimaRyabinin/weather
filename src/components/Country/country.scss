@@ -1,0 +1,18 @@
+@import '../assets.scss';
+
+.country-wrapper {
+  // margin-top: 30px;
+  // margin-left: 20px;
+  
+  // display: flex;
+  // flex-direction: column;
+}
+
+.details {
+  &__country {
+    @include text(rgba(110, 118, 133, 0.8), 18px, 700);
+  }
+  &__city {
+    @include text(rgba(110, 118, 133, 0.8), 70px, 400);
+  }
+}

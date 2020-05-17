@@ -1,0 +1,61 @@
+@import '../assets.scss';
+
+
+.search {
+  display: flex;
+  // align-items: flex-end;
+  overflow: auto;
+  &__img {
+    margin-top: 37px;
+    margin-left: 75px;
+    cursor: pointer;
+  }
+  &__input {
+    margin: 40px 30px 0px 12px;
+    padding-left: 10px;
+
+    width: 100%;
+    max-width: 980px;
+    height: 33px;
+
+    background-color: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgba(63, 113, 209, 0.17);
+    transition-duration: 0.5s;
+
+    @include text(rgba(110, 118, 133, 0.6), 18px, 700);
+
+    &::-webkit-input-placeholder {@include text(rgba(110, 118, 133, 0.6), 18px, 700);}
+    &:-ms-input-placeholder {@include text(rgba(110, 118, 133, 0.6), 18px, 700);}
+    &::-ms-input-placeholder {@include text(rgba(110, 118, 133, 0.6), 18px, 700);}
+    &::placeholder {@include text(rgba(110, 118, 133, 0.6), 18px, 700);}
+    &::-webkit-input-placeholder       {opacity: 1; transition: opacity 0.3s ease;}
+    &::-moz-placeholder                {opacity: 1; transition: opacity 0.3s ease;}
+    &:-moz-placeholder                 {opacity: 1; transition: opacity 0.3s ease;}
+    &:-ms-input-placeholder            {opacity: 1; transition: opacity 0.3s ease;}
+    &:focus::-webkit-input-placeholder {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus::-moz-placeholder          {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus:-moz-placeholder           {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus:-ms-input-placeholder      {opacity: 0; transition: opacity 0.3s ease;}
+    &:focus {
+      border-bottom: 2px solid #4A7DBA;
+      // animation: changeColor 1.5s linear infinite;
+      // -webkit-animation: changeColor 1.5s linear infinite;
+      // -moz-animation: changeColor 1.5s linear infinite;
+      // -o-animation: changeColor 1.5s linear infinite;
+    }
+  }
+}
+
+// @keyframes changeColor {
+//   0% {
+//     border-bottom: 2px solid rgba(63, 113, 209, 0.17);
+//   }
+//   50% {
+//     border-bottom: 2px solid #4A7DBA;
+//   }
+//   100% {
+//     border-bottom: 2px solid rgba(63, 113, 209, 0.17);
+//   }
+// }
